@@ -1,0 +1,26 @@
+{
+  "name": "openmrs-owa-bahmni-appointments",
+  "version": "1.0.0",
+  "description": "Packages UI of bahmni appointments module as openmrs OWA",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf ./dependencies ./dist",
+    "download": "download https://github.com/Bahmni/openmrs-module-appointment-frontend/releases/download/0.0.1-beta.1/openmrs-module-appointment-frontend.zip -o dependencies",
+    "unzip": "extract-zip ./dependencies/openmrs-module-appointment-frontend.zip",
+    "build": "npm run clean && npm run download && npm run unzip"
+  },
+  "dependencies": {},
+  "keywords": [
+    "openmrs",
+    "owa",
+    "bahmni",
+    "appointments"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "download-cli": "^1.1.1",
+    "extract-zip": "^1.6.7",
+    "rimraf": "^3.0.0"
+  }
+}
