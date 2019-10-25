@@ -1,0 +1,16 @@
+{
+  "version": "0.0.1",
+  "name": "Bahmni Appointments Scheduling",
+  "description": "Bahmni appointment module for openmrs",
+  "launch_path": "index.html",
+  "icons": {
+    "48": "icons/icon-48x48.png",
+    "128": "icons/icon-128x128.png"
+  },
+  "default_locale": "en",
+  "activities": {
+    "openmrs": {
+      "href": "*"
+    }
+  }
+}

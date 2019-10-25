@@ -7,7 +7,8 @@
     "clean": "rimraf ./dependencies ./dist",
     "download": "download https://github.com/Bahmni/openmrs-module-appointment-frontend/releases/download/0.0.1-beta.1/openmrs-module-appointment-frontend.zip -o dependencies",
     "unzip": "extract-zip ./dependencies/openmrs-module-appointment-frontend.zip",
-    "build": "npm run clean && npm run download && npm run unzip"
+    "copy": "cp -r ./src/ ./dist/",
+    "build": "npm run clean && npm run download && npm run unzip && npm run copy"
   },
   "dependencies": {},
   "keywords": [
@@ -19,6 +20,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "copy": "^0.3.2",
     "download-cli": "^1.1.1",
     "extract-zip": "^1.6.7",
     "rimraf": "^3.0.0"
